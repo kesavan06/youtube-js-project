@@ -33,7 +33,7 @@ function userMenuOpenClose() {
     event.stopPropagation();
     userMenu.classList.add("openUserMenu");
     userMenu.classList.remove("closeUserMenu");
-    if (userImg.src == "http://127.0.0.1:5501/photos/user-regular.svg") {
+    if (userImg.src.endsWith("/photos/user-regular.svg")) {
       userImg.src = "../photos/xmark-solid.svg";
       userMenu.style.display = "flex";
       userMenu.style.transition = "margin-right 2s";

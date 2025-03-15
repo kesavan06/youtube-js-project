@@ -199,7 +199,7 @@ function getLikedVideo(likedData) {
   }
   let likedElement = document.getElementById("likedVideo");
   likedElement.addEventListener("click", function () {
-    if (likedElement.src == "http://127.0.0.1:5501/photos/heart-regular.svg") {
+    if (likedElement.src.endsWith("/photos/heart-regular.svg")) {
       likedElement.setAttribute("src", "../photos/heart-solid.svg");
       likedElement.classList.add("likeAnimation");
       likedVideosArray.push(likedData);
@@ -244,9 +244,7 @@ function getWatchLaterVideo(watchLaterData) {
   }
   let watchLaterElement = document.getElementById("watchLater");
   watchLaterElement.addEventListener("click", function () {
-    if (
-      watchLaterElement.src == "http://127.0.0.1:5501/photos/clock-regular.svg"
-    ) {
+    if (watchLaterElement.src.endsWith("/photos/clock-regular.svg")) {
       watchLaterElement.setAttribute("src", "../photos/clock-solid.svg");
       watchLaterElement.classList.add("likeAnimation");
       watchLaterArray.push(watchLaterData);
@@ -347,5 +345,3 @@ function getUserName() {
 }
 
 getUserName();
-
-
