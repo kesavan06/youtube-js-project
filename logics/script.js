@@ -42,7 +42,7 @@ function switchToNextApiKey() {
 }
 
 function fetchYouTubeData(query) {
-  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${getCurrentApiKey()}&maxResults=3`;
+  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${getCurrentApiKey()}&maxResults=50`;
 
   fetch(url)
     .then((response) => {
