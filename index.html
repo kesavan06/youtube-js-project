@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" href="../photos/free-youtube.png" />
+  </head>
+  <body>
+    <!--===> Main container <===-->
+    <div class="main-container">
+      <!--===>header start <==== -->
+      <div class="main-header">
+        <div class="logo-header">
+          <a href="index.html"
+            ><img src="../photos/free-youtube.png" alt=""
+          /></a>
+
+          <a href="index.html"><h2>YouTube</h2></a>
+        </div>
+        <div class="search-header">
+          <input type="search" id="search-query" />
+          <button class="searchIcon-header">
+            <img src="../photos/magnifying-glass-solid.svg" alt="" />
+          </button>
+        </div>
+        <h3 id="userName"></h3>
+        <div class="sideMenu-header" id="sideMenu-header"></div>
+      </div>
+      <!--===>Main header end<==== -->
+
+      <!--===>Main menu start <==== -->
+      <div class="main-menu">
+        <div class="menu">
+          <div class="menuBox">
+            <img id="homeImg" src="../photos/house-solid.svg" alt="" />
+            <p id="homeButton">Home</p>
+          </div>
+          <div class="menuBox">
+            <img
+              id="historyImg"
+              src="../photos/clock-rotate-left-solid.svg"
+              alt=""
+            />
+            <p>History</p>
+          </div>
+          <div class="menuBox">
+            <img id="watchLaterImg" src="../photos/clock-regular.svg" alt="" />
+            <p>Watch later</p>
+          </div>
+          <div class="menuBox">
+            <img id="likeVideoImg" src="../photos/heart-regular.svg" alt="" />
+            <p>Liked videos</p>
+          </div>
+        </div>
+      </div>
+      <!--===>Main menu end <==== -->
+      <!--=======> Suggusted queries start <=====-->
+      <div class="suggestion-bar" id="suggestion-bar"></div>
+      <!-- Suggusted queries end -->
+      <!--===>Video boxes <==== -->
+
+      <div id="msg" class="message">
+        <p></p>
+      </div>
+      <!-- <iframe
+        id="videoIframe"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe> -->
+      <div id="video-container"></div>
+    </div>
+    <script src="../logics/theme-change.js"></script>
+    <script src="../logics/script.js"></script>
+  </body>
+</html>

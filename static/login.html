@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | YouTube</title>
+    <link rel="stylesheet" href="../styles/login-style.css" />
+    <link rel="icon" href="../photos/youtube-brands.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="../photos/youtube-brands.svg" alt="" />
+        <h1>YouTube</h1>
+      </div>
+      <div class="user-details">
+        <input id="userNameInput" type="text" placeholder="User name" />
+        <p id="userMessage"></p>
+        <input id="passwordInput" type="password" placeholder="password" />
+        <p id="passwordMessage"></p>
+        <button id="loginToHome">Login</button>
+      </div>
+      <div class="create-account">
+        <p>
+          Not registered? <a href="../static/signin.html">create an account</a>
+        </p>
+      </div>
+    </div>
+    <script src="../logics/login.js"></script>
+  </body>
+</html>

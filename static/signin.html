@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigin | YouTube</title>
+    <link rel="stylesheet" href="../styles/signin-style.css" />
+    <link rel="icon" href="../photos/youtube-brands.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="../photos/youtube-brands.svg" alt="" />
+        <h1>YouTube</h1>
+      </div>
+      <div class="user-details">
+        <div class="box">
+          <input id="userNameInput" type="text" placeholder="User name" />
+          <p id="userMessage"></p>
+        </div>
+        <div class="box">
+          <input id="passwordInput" type="password" placeholder="Enter new password" />
+          <p id="passwordMessage"></p>
+        </div>
+        <div class="box">
+          <input id="confirmPasswordInput" type="password" placeholder="Confirm password" />
+          <p id="confirmPasswordMessage"></p>
+        </div>
+        <button id="signInBtn">Sign in</button>
+      </div>
+      <div class="create-account">
+        <p>Already have an account? <a href="../static/login.html">Login</a></p>
+      </div>
+    </div>
+    <script src="../logics/signin.js"></script>
+  </body>
+</html>
